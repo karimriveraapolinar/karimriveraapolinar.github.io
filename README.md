@@ -38,3 +38,16 @@
  I love watching YouTube whenever I am eating something. My favorite YouTuber is Casey Neistat, I also like watching Mr. Beast.
 * [jstris](https://jstris.jezevec10.com/)
  I love playing jstris since it is a faster paced version of tetris and is more competitive in my opinon. Whenever I find myself bored I often turn to jstris and play it.
+
+
+
+## My Mermaid Charts
+### Getting Ready in the Morning
+``` mermaid
+flowchart TD;
+    Wake_Up-->Shower;
+    Shower-->Eat_Breakfast;
+    Eat_Breakfast-->Brush_Teeth;
+    Brush_Teeth-->Drive_To_Bus; 
+    Drive_To_Bus-->Take_The_Bus_To_School;
+```
