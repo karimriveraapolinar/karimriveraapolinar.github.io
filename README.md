@@ -51,3 +51,30 @@ flowchart TD;
     Brush_Teeth-->Drive_To_Bus; 
     Drive_To_Bus-->Take_The_Bus_To_School;
 ```
+### Call of Duty Game Release Timeline
+``` mermaid
+%%{init: { 'logLevel': 'debug', 'theme': 'base' } }%%
+timeline
+    title Call of Duty Release Timeline
+    2003 : Call of Duty
+    2004 : Call of Duty: United Offensive
+    2005 : Call of Duty 2
+    2006 : Call of Duty 3
+    2007 : Call of Duty 4: Modern Warfare
+    2008 : Call of Duty: World at War
+    2009 : Call of Duty: Modern Warfare 2
+    2010 : Call of Duty: Black Ops
+    2011 : Call of Duty: Modern Warfare 3
+    2012 : Call of Duty: Black Ops II
+    2013 : Call of Duty: Ghosts
+    2014 : Call of Duty: Advanced Warfare
+    2015 : Call of Duty: Black Ops III
+    2016 : Call of Duty: Infinite Warfare
+    2017 : Call of Duty: WWII
+    2018 : Call of Duty: Black Ops 4
+    2019 : Call of Duty: Modern Warfare
+    2020 : Call of Duty: Black Ops Cold War
+    2021 : Call of Duty: Vanguard
+    2022 : Call of Duty: Modern Warfare II
+    2023 : Call of Duty: Modern Warfare III (upcoming)
+```
