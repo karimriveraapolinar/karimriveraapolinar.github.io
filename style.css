@@ -53,7 +53,6 @@ nav{
     top: 0;
     width: 100%;
     position: -webkit-sticky; /* Safari */
-    position: sticky;
     top: 0;
 }
 
