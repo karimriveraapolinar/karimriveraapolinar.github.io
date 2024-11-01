@@ -23,7 +23,7 @@ header{
     font-family: 'Times New Roman', Times, serif;
     font-size: large;
     position: sticky;
-    overflow: hidden;
+    overflow:auto
 }
 .contactheader{
     color: #aaacb3;
@@ -68,7 +68,7 @@ nav{
     padding: 0;
     position:sticky;
     top:0;
-    overflow: hidden;
+    overflow: auto;
     background-color:#aaacb3;
     height:auto;
 }
