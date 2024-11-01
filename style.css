@@ -5,91 +5,90 @@ Main Brand Color: #e96663;
 Dark Accent: #aaacb3;
 Dark Shades: #475671;
 */
-body {
-  background-color: #475671;
-  color: #fcfc;
-  text-align: center;
+body{
+    background-color: #475671;
+    color: #fcfc;
+    text-align: center;
 }
 
 h1 {
-  color: #fcfc;
-  font-family: "Franklin Gothic Medium";
+    color: #fcfc;
+    font-family:'Franklin Gothic Medium'
+
 }
 
-header {
-  color: #fcfcfd;
-  font-family: "Times New Roman", Times, serif;
-  font-size: large;
-  position: sticky;
-  overflow: hidden;
+
+header{
+    color: #fcfcfd;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    position: sticky;
+    overflow: hidden;
 }
-.contactheader {
-  color: #aaacb3;
-  font-family: "Times New Roman", Times, serif;
+.contactheader{
+    color: #aaacb3;
+    font-family: 'Times New Roman', Times, serif;
 }
 img {
-  width: 100px;
-  border-radius: 100%; /* Rounds out images to circular shape*/
-  display: inline-block;
+    width: 100px;
+    border-radius: 50%; /* Rounds out images to circular shape*/
+    display: inline-block;
 }
 
-.column {
-  float: left;
-  width: 33%;
+.column{
+    float: left;
+    width: 33%;
 }
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.row:after{
+    content: "";
+    display: table;
+    clear:both;
 }
 
-.profilepic {
-  margin-top: 100px;
+.profilepic{
+    margin-top: 100px;
 }
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  position: -webkit-sticky;
-  position: fixed;
-  top: 0;
-}
-.navbar {
+nav{
+    position: fixed;
+    top: 0;
     width: 100%;
     position: -webkit-sticky;
     position: fixed;
-    top:0;
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none; 
+    top: 0;
+}
+
+.navBar{
+    list-style-type: none; /* Removes bullets */
     margin: 0;
     padding: 0;
-    background-color: #333;
-    justify-content: space-evenly; 
-    align-items: center;  
+    position:sticky;
+    top:0;
+    overflow: hidden;
+    background-color:#aaacb3;
+    height:auto;
 }
 
-.navBar li {
-  float: left;
-  border-right: 1px solid #475671;
+.navBar li{
+    float: left;
+    border-right: 1px solid #475671;
 }
 .navBar li:last-child {
-  border-right: none;
+    border-right: none;
+  }
+
+.navBar li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-.navBar li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+.navBar li a:hover{
+    color: #aaacb3;
 }
 
-.navBar li a:hover {
-  color: #aaacb3;
-}
-
-.sectiontitle {
-  color: #aaacb3;
-  text-align: center;
+.sectiontitle{
+    color:#aaacb3;
+    text-align:center
 }
