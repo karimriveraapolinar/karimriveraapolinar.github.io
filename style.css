@@ -52,11 +52,16 @@ nav{
     position: fixed;
     top: 0;
     width: 100%;
-    position: -webkit-sticky;
     position: fixed;
     top: 0;
 }
-
+.navbar {
+    width: 80%; /* Set a width */
+    margin: 0 auto; /* Centers the navbar */
+    list-style: none;
+    padding: 0;
+    display: flex; /* Align items in a row */
+}
 .navBar{
     list-style-type: none; /* Removes bullets */
     margin: 0;
@@ -78,6 +83,7 @@ nav{
 
 .navBar li a{
     display: block;
+    display:block;
     color: white;
     text-align: center;
     padding: 14px 16px;
