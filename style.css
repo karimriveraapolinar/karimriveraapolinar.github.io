@@ -52,7 +52,8 @@ nav{
     position: fixed;
     top: 0;
     width: 100%;
-    position: -webkit-sticky; /* Safari */
+    position: -webkit-sticky;
+    position: fixed;
     top: 0;
 }
 
