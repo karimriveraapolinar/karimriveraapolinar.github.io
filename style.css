@@ -5,36 +5,38 @@ Main Brand Color: #e96663;
 Dark Accent: #aaacb3;
 Dark Shades: #475671;
 */
-body{
-    background-color: #475671;
-    color: #fcfc;
-    text-align: center;
+body {
+  background-color: #475671;
+  color: #fcfc;
+  text-align: center;
 }
 
 h1 {
-    color: #fcfc;
-    font-family:'Franklin Gothic Medium'
-
+  color: #fcfc;
+  font-family: "Franklin Gothic Medium";
 }
 
+header {
+  color: #fcfcfd;
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+  position: sticky;
+  overflow: auto;
+}
 
-header{
-    color: #fcfcfd;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: large;
-    position: sticky;
-    overflow:auto
+.contactheader {
+  color: #aaacb3;
+  font-family: "Times New Roman", Times, serif;
 }
-.contactheader{
-    color: #aaacb3;
-    font-family: 'Times New Roman', Times, serif;
-}
+
 img {
-    width: 100px;
-    border-radius: 50%; /* Rounds out images to circular shape*/
-    display: inline-block;
+  width: 100px;
+  border-radius: 50%;
+  /* Rounds out images to circular shape*/
+  display: inline-block;
 }
 
+/*
 .column{
     float: left;
     width: 33%;
@@ -44,57 +46,242 @@ img {
     display: table;
     clear:both;
 }
-
-.profilepic{
-    margin-top: 100px;
-}
-nav{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    position: fixed;
-    top: 0;
-}
-.navbar {
-    width: 80%; /* Set a width */
-    margin: 0 auto; /* Centers the navbar */
-    list-style: none;
-    padding: 0;
-    display: flex; /* Align items in a row */
-}
-.navBar{
-    list-style-type: none; /* Removes bullets */
-    margin: 0;
-    padding: 0;
-    position:sticky;
-    top:0;
-    overflow: auto;
-    background-color:#aaacb3;
-    height:auto;
+*/
+/* Container with Flexbox */
+.container {
+  display: flex;
+  /* Enables Flexbox layout */
+  justify-content: center;
+  /* Space between the items horizontally */
+  align-items: flex-start;
+  /* Align items to the top vertically */
+  background-color: #475671;
+  /* Light background color */
+  padding: 20px;
+  /* Padding around the container */
+  flex-wrap: wrap;
+  /* Allow items to wrap onto the next line if necessary */
+  height: auto;
+  /* Allow container height to adjust automatically */
 }
 
-.navBar li{
-    float: left;
-    border-right: 1px solid #475671;
+/* Columns (boxes) inside the container */
+.column {
+  flex: 1 1 30%;
+  /* Each column will take up 30% of the container width */
+  box-sizing: border-box;
+  /* Ensures padding and borders are included in width */
+  margin: 10px;
+  /* Add space between columns */
+  min-width: 280px;
+  /* Ensure the columns don't shrink too small */
 }
-.navBar li:last-child {
-    border-right: none;
+
+/* Styling for individual boxes */
+.box {
+  background-color: #475671;
+  /* Blue background */
+  color: white;
+  /* White text */
+  padding: 20px;
+  /* Padding inside each box */
+  text-align: center;
+  /* Centers the text inside the box */
+  border-radius: 8px;
+  /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Adds subtle shadow */
+}
+
+/* Justify-content experiment (optional, can switch between these for different alignments) */
+.container.justify-flex-start {
+  justify-content: flex-start;
+  /* Align items to the left */
+}
+
+.container.justify-center {
+  justify-content: center;
+  /* Align items in the center */
+}
+
+.container.justify-space-between {
+  justify-content: space-between;
+  /* Evenly distribute items with space between */
+}
+
+.container.justify-space-around {
+  justify-content: space-around;
+  /* Evenly distribute items with space around */
+}
+
+/* Experiment with align-items for vertical alignment */
+.container.align-flex-start {
+  align-items: flex-start;
+  /* Align items to the top */
+}
+
+.container.align-center {
+  align-items: center;
+  /* Align items in the center vertically */
+}
+
+.container.align-flex-end {
+  align-items: flex-end;
+  /* Align items to the bottom */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .column {
+    flex: 1 1 100%;
+    /* Make each box take up 100% width on smaller screens */
   }
+}
 
-.navBar li a{
+.profilepic {
+  margin-top: 100px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.navbar {
+  width: 80%;
+  /* Set a width */
+  margin: 0 auto;
+  /* Centers the navbar */
+  list-style: none;
+  padding: 0;
+  display: flex;
+  /* Align items in a row */
+}
+
+.navBar {
+  list-style-type: none;
+  /* Removes bullets */
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  overflow: auto;
+  background-color: #aaacb3;
+  height: auto;
+}
+
+.navBar li {
+  float: left;
+  border-right: 1px solid #475671;
+}
+
+.navBar li:last-child {
+  border-right: none;
+}
+
+.navBar li a {
+  display: block;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navBar li a:hover {
+  color: #aaacb3;
+}
+
+.sectiontitle {
+  color: #aaacb3;
+  text-align: center;
+}
+/* Flexbox layout for the container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: 475671;
+    min-height: 100vh;
+}
+
+/* Form container */
+.contact-form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    max-width: 500px;        /* Set a maximum width for the form */
+    width: 100%;             /* Make the form responsive */
+    background-color: #475671; /* White background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Form input and textarea styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1rem;
+    margin-bottom: 5px;
     display: block;
-    display:block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* For textarea */
+textarea {
+    min-height: 100px;
+}
+
+/* Styling for radio buttons */
+.radio-group {
+    display: flex;
+    gap: 10px;
+}
+
+.radio-group label {
+    font-size: 1rem;
+}
+
+/* Submit Button */
+button {
+    background-color: #3498db;
     color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.navBar li a:hover{
-    color: #aaacb3;
+button:hover {
+    background-color: #2980b9;
 }
 
-.sectiontitle{
-    color:#aaacb3;
-    text-align:center
+/* Form validation: Error highlighting */
+input:invalid, textarea:invalid {
+    border-color: red;
+}
+
+input:required:valid, textarea:required:valid {
+    border-color: green;
+}
+
+button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
 }
